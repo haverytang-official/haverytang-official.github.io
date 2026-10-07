@@ -8,11 +8,15 @@
 
 ## 文件说明
 
-- `index.html`：Home/About、Research Interests、Projects、Education、Publications、Notes/Blog、CV、Contact。
+- `index.html`：Home/About、Research Interests、Projects、Education、Publications、Reading Notes、CV、Contact。
 - `assets/style.css`：字体、颜色、桌面/手机布局、打印样式。
 - `assets/site.js`：锚点导航高亮和个人资料打印按钮。
 - `assets/favicon.svg`：原创托卡马克意象图标；首页图形也是原创 SVG。
-- `notes/starting-a-research-notebook.html`：首篇网站开篇说明。
+- `assets/reading.css`：文献目录、单篇文献索引和章节笔记的响应式样式。
+- `notes/index.html`：Reading Notes 文献目录。
+- `notes/strait-2008/index.html`：Strait 等（2008）《Chapter 2: Magnetic Diagnostics》的文献资料和章节索引。
+- `notes/strait-2008/magnetic-field-probes.html`：II.B.2 章节入口；目前只发布主题介绍和准备中状态，正文在作者审阅后发布。
+- `notes/starting-a-research-notebook.html`：原网站开篇说明，保留原地址。
 - `cv.html`：根据提供的 CV 整理的网页版，支持浏览器打印。
 - `assets/cv.pdf`：公开下载版 CV，已移除手机号及旧元数据，并按用户确认将 SWIP 入学日期修正为 2026 年 8 月；本地原始 PDF 未修改。
 - `404.html`：GitHub Pages 找不到页面时的返回入口。
@@ -37,7 +41,7 @@
 - **项目**：在 `id="projects"` 内复制已有 `<article class="entry">`，填入真实名称、介绍和项目链接。
 - **教育**：编辑 `id="education"`，补充准确的学位、院校、年份，再同步 `cv.html`。
 - **论文**：将 `id="publications"` 内占位文字替换为标题、作者、年份、会议/期刊及 DOI、PDF、代码链接。
-- **笔记**：复制 `notes/starting-a-research-notebook.html` 为新文件，改标题、日期和内容，然后在首页 `id="notes"` 增加链接。子页面资源引用保留 `../assets/`。
+- **笔记**：使用下面的文献与章节层级，先准备草稿，作者审阅后再更新公开页面。
 - **CV PDF**：更新 `assets/cv.pdf` 并同步 `cv.html`；首页已连接公开下载版。上传前核对公开联系信息及日期。
 - **照片**：可把首页 `<figure>` 内的示意图替换为自己的照片，并写准确的替代文本；不要使用参考站的人像。
 - **更新日期**：修改首页与简介页页脚。没有自动更新日期，避免让未修改的内容看起来刚更新。
@@ -47,6 +51,18 @@
 ## 本地查看
 
 双击 `index.html` 即可浏览；所有主要资源和子页面链接采用相对路径。`404.html` 使用目标网站绝对地址，以处理任意深度的错误路径。
+
+## Reading Notes 的维护方式
+
+目录结构为 `Reading Notes → 文献 → 章节笔记`。目前第一篇文献为 Strait 等（2008），第一篇章节笔记为 II.B.2 Magnetic field probes。
+
+1. **添加新文献**：在 `notes/` 下建立文献文件夹，例如 `notes/author-year/`，复制现有文献的 `index.html`，修改真实书目信息、DOI 和章节列表；在 `notes/index.html` 添加入口。
+2. **添加章节**：在对应文献文件夹中建立章节 HTML，添加面包屑、标题、正文和参考文献，并更新文献的章节索引。该层资源路径为 `../../assets/`，返回总目录为 `../index.html`。
+3. **保留思考过程**：原始疑问和后续解答分别记录，编号保持对应，状态以作者确认为准；已经解决的问题不能仍标作未解决。原文内容概述与个人推导应明确区分。
+4. **发布前审阅**：未经作者审阅的正文和手写照片留在本地网站目录之外；不要将草稿提交到公开仓库，即使没有导航链接也会公开。当前章节仅为入口和主题介绍。
+5. **完成后发布**：将审阅后的正文放入章节页面，把目录和章节页的 `In preparation` 状态改为实际完成状态。如标注日期，使用实际发布日期；文献的 2008 年不作为笔记发布日期。
+
+保持普通 HTML/CSS 即可，无需添加数据库、构建工具或 JavaScript 才能维护这一层级。
 
 ## 设计参考
 

@@ -28,3 +28,26 @@
 @media(max-width:760px){.reading-page{width:calc(100% - 40px)}.reading-intro h1{font-size:2.3rem}}
 @media(max-width:540px){.reading-intro{padding:1.8rem 0}.reading-intro h1{font-size:2rem}.reading-page .site-header{gap:1.25rem}.reading-list,.reading-scope{padding-bottom:2.5rem}.reading-item h2,.reading-item h3{font-size:1.3rem}.breadcrumbs{margin-top:1.4rem}}
 @media print{.reading-page{width:100%;max-width:none}.breadcrumbs{display:none}.reading-intro{padding-top:1rem}}
+
+.reading-note{padding-bottom:3.5rem}
+.reading-note .language-links{display:flex;justify-content:flex-start;gap:1.5rem;position:sticky;top:0;z-index:2;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:.8rem 0;margin-bottom:2rem}
+.reading-note .language-links a{font-size:.9rem;color:var(--accent)}
+.reading-note .language-version{scroll-margin-top:4.5rem;font-size:1.0625rem;line-height:1.9;overflow-wrap:anywhere}
+.reading-note .language-version[lang="en"]{line-height:1.75}
+.reading-note .language-label{font-size:.75rem;letter-spacing:.12em;color:var(--warm);margin:0 0 1rem}
+.reading-note .language-version>h2{font-family:Georgia,"Microsoft YaHei",serif;font-size:2.1rem;line-height:1.35;margin:0 0 1.5rem}
+.reading-note .language-version h3{font-size:1.4rem;line-height:1.5;font-weight:500;margin:2.7rem 0 1.1rem;padding-top:1.1rem;border-top:1px solid var(--line)}
+.reading-note .language-version p{margin-bottom:1.1rem}
+.reading-note .language-version li{margin-bottom:.55rem}
+.reading-note .language-version ul,.reading-note .language-version ol{padding-left:1.5em}
+.reading-note .language-version a{overflow-wrap:anywhere}
+.reading-note .language-version+.language-version{margin-top:4rem;padding-top:2.5rem;border-top:2px solid var(--accent)}
+.reading-note .equation{overflow-x:auto;padding:1rem .5rem;margin:1rem 0 1.4rem;background:#f7f9f8;overflow-wrap:normal}
+.reading-note math{font-size:1.08em}
+.reading-note .table-scroll{overflow-x:auto;margin:1.4rem 0}
+.reading-note table{border-collapse:collapse;width:100%;font-size:.875rem;min-width:590px}
+.reading-note th,.reading-note td{text-align:left;padding:.65rem .75rem;border-bottom:1px solid var(--line);vertical-align:top}
+.reading-note th{background:var(--tint);font-weight:600}
+.reading-note td:last-child{white-space:nowrap;color:var(--accent)}
+@media(max-width:540px){.reading-note .language-version{font-size:1rem}.reading-note .language-version>h2{font-size:1.75rem}.reading-note .language-version h3{font-size:1.3rem}.reading-note{padding-bottom:2.5rem}}
+@media print{.reading-note .language-links{display:none}.reading-note .language-version+.language-version{break-before:page}.reading-note h3{break-after:avoid}.reading-note .equation{break-inside:avoid}.reading-note .table-scroll{overflow:visible}.reading-note table{min-width:0}}

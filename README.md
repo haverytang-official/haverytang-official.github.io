@@ -4,7 +4,7 @@
 
 **目标仓库：** `haverytang-official/haverytang-official.github.io`  
 **目标网址：** https://haverytang-official.github.io/  
-**部署状态：** 源码已准备；是否上线须以 GitHub Pages 设置和实际访问结果为准。
+**部署状态：** 已于 2026-10-07 发布到 GitHub Pages（main → /(root)）；首页与样式、脚本、图标、笔记页、CV 简介页已验证可访问。
 
 ## 文件说明
 

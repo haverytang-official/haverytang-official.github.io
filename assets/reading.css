@@ -71,3 +71,14 @@
 .course-guide-index{padding-bottom:1.8rem}
 @media(max-width:540px){.course-note .contents-grid{grid-template-columns:1fr;gap:1.1rem}.course-note .study-guide{padding:1.1rem}.course-note .study-guide .guide-title{font-size:1.35rem}}
 @media print{.course-note .contents,.chapter-navigation{display:none}.course-note .study-guide{break-inside:avoid}.course-note h4{break-after:avoid}}
+
+.integrator-note .contents{border:1px solid var(--line);padding:1.1rem 1.3rem;margin:0 0 2.2rem;font-size:.9rem}
+.integrator-note .contents summary{cursor:pointer;font-weight:600}
+.integrator-note .contents-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:1rem}
+.integrator-note .contents ol{padding-left:1.4rem;margin:0}
+.integrator-note .contents li{margin:.4rem 0}
+.integrator-note .language-version h4{font-size:1.25rem;line-height:1.5;font-weight:600;margin:1.9rem 0 .9rem}
+.integrator-note .language-version h3[id]{scroll-margin-top:4.5rem}
+.integrator-note .table-scroll td:last-child{white-space:normal}
+@media(max-width:540px){.integrator-note .contents-grid{grid-template-columns:1fr;gap:1.1rem}}
+@media print{.integrator-note .contents{display:none}.integrator-note h4{break-after:avoid}}

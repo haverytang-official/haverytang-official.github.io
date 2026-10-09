@@ -15,6 +15,7 @@
 - `assets/reading.css`：文献目录、单篇文献索引和章节笔记的响应式样式。
 - `notes/index.html`：Reading Notes 文献目录。
 - `notes/strait-2008/index.html`：Strait 等（2008）《Chapter 2: Magnetic Diagnostics》的文献资料和章节索引。
+- `notes/strait-2008/integrators.html`：2026-10-09 经作者审阅后发布的 II.C.1 双语阅读笔记，英文全文在前、中文在后；保留已解决的阅读疑问①，整理被动与主动积分、积分漂移和基线修正。公式使用原生 MathML，附参考文献和前篇链接。
 - `notes/strait-2008/magnetic-field-probes.html`：2026-10-08 发布的 II.B.2 双语阅读笔记，英文全文在前，中文在后；五个阅读问题均已解决。公式使用浏览器原生 MathML，无需外部脚本。
 - `notes/starting-a-research-notebook.html`：原网站开篇说明，保留原地址。
 - `cv.html`：根据提供的 CV 整理的网页版，支持浏览器打印。
@@ -54,7 +55,7 @@
 
 ## Reading Notes 的维护方式
 
-目录结构为 `Reading Notes → 文献 → 章节笔记`。目前第一篇文献为 Strait 等（2008），第一篇章节笔记为 II.B.2 Magnetic field probes。
+目录结构为 `Reading Notes → 文献 → 章节笔记`。目前第一篇文献为 Strait 等（2008），已发布 II.B.2 Magnetic field probes 与 II.C.1 Integrators 两篇章节笔记。
 
 1. **添加新文献**：在 `notes/` 下建立文献文件夹，例如 `notes/author-year/`，复制现有文献的 `index.html`，修改真实书目信息、DOI 和章节列表；在 `notes/index.html` 添加入口。
 2. **添加章节**：在对应文献文件夹中建立章节 HTML，添加面包屑、标题、正文和参考文献，并更新文献的章节索引。该层资源路径为 `../../assets/`，返回总目录为 `../index.html`。

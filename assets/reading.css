@@ -51,3 +51,23 @@
 .reading-note td:last-child{white-space:nowrap;color:var(--accent)}
 @media(max-width:540px){.reading-note .language-version{font-size:1rem}.reading-note .language-version>h2{font-size:1.75rem}.reading-note .language-version h3{font-size:1.3rem}.reading-note{padding-bottom:2.5rem}}
 @media print{.reading-note .language-links{display:none}.reading-note .language-version+.language-version{break-before:page}.reading-note h3{break-after:avoid}.reading-note .equation{break-inside:avoid}.reading-note .table-scroll{overflow:visible}.reading-note table{min-width:0}}
+
+.course-note .contents{border:1px solid var(--line);padding:1.1rem 1.3rem;margin:0 0 2.2rem;font-size:.9rem}
+.course-note .contents summary{cursor:pointer;font-weight:600}
+.course-note .contents-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:1rem}
+.course-note .contents ol{padding-left:1.4rem;margin:0}
+.course-note .contents li{margin:.4rem 0}
+.course-note .study-guide{background:var(--tint);border-left:3px solid var(--accent);padding:1.35rem 1.5rem;margin:1.6rem 0 2.2rem}
+.course-note .study-guide .guide-label{font-size:.75rem;letter-spacing:.09em;color:var(--warm);margin:0 0 .75rem}
+.course-note .study-guide .guide-title{border:0;padding:0;margin:0 0 1rem;font-family:Georgia,"Microsoft YaHei",serif;font-size:1.55rem;line-height:1.4}
+.course-note .study-guide ol{margin:0;padding-left:1.4rem}
+.course-note .study-guide li:last-child{margin-bottom:0}
+.course-note .language-version h4{font-size:1.25rem;line-height:1.5;font-weight:600;margin:1.9rem 0 .9rem}
+.course-note .language-version h3[id]{scroll-margin-top:4.5rem}
+.course-note .table-scroll td:last-child{white-space:normal}
+.course-note .course-notation{font-size:.94rem;color:var(--muted);border-left:2px solid var(--line);padding:.1rem 0 .1rem 1.1rem;margin:1.5rem 0 2rem}
+.course-note .course-notation p{margin:0}
+.chapter-navigation{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem 1.5rem;font-size:.9rem;margin-top:3rem;padding-top:1.4rem;border-top:1px solid var(--line)}
+.course-guide-index{padding-bottom:1.8rem}
+@media(max-width:540px){.course-note .contents-grid{grid-template-columns:1fr;gap:1.1rem}.course-note .study-guide{padding:1.1rem}.course-note .study-guide .guide-title{font-size:1.35rem}}
+@media print{.course-note .contents,.chapter-navigation{display:none}.course-note .study-guide{break-inside:avoid}.course-note h4{break-after:avoid}}

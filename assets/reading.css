@@ -82,3 +82,12 @@
 .integrator-note .table-scroll td:last-child{white-space:normal}
 @media(max-width:540px){.integrator-note .contents-grid{grid-template-columns:1fr;gap:1.1rem}}
 @media print{.integrator-note .contents{display:none}.integrator-note h4{break-after:avoid}}
+
+.course-hub .reading-list{padding:1.6rem 0 2rem}
+.course-hub .paper-reference{margin-top:1rem}
+.course-hub .preparation-note{margin-bottom:0}
+.course-hub .course-topics{margin:1.5rem 0 0}
+.course-hub .course-topics>div{padding:1rem 0;border-top:1px solid var(--line)}
+.course-hub .course-topics>div:first-child{border-top:0;padding-top:0}
+.course-hub .course-topics dt{font-weight:600;font-size:1rem;margin-bottom:.35rem}
+.course-hub .course-topics dd{margin:0;color:var(--muted);font-size:.95rem}

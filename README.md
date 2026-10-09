@@ -8,7 +8,7 @@
 
 ## 文件说明
 
-- `index.html`：Home/About、Research Interests、Projects、Education、Publications、Reading Notes、CV、Contact。
+- `index.html`：Home/About、Research Interests、Projects、Education、Publications、Notes（Reading Notes / Course Notes）、CV、Contact。
 - `assets/style.css`：字体、颜色、桌面/手机布局、打印样式。
 - `assets/site.js`：锚点导航高亮和个人资料打印按钮。
 - `assets/favicon.svg`：原创托卡马克意象图标；首页图形也是原创 SVG。
@@ -67,3 +67,13 @@
 ## 设计参考
 
 参考 https://tairanhe.com/ 的白底、克制的链接色、简介与纵向学术条目阅读顺序。版式、配色、字体选择、导航、图形与页面代码均重新设计。未复制原站 HTML、CSS、人像、论文内容或多媒体。
+
+## Course Notes 的维护方式
+
+目录结构为 `Course Notes → 课程 → 章节笔记`，与 Reading Notes 并列。`courses/index.html` 是课程总目录，`courses/plasma-physics/index.html` 是等离子体物理课程目录，目前有第 1–3 节入口。
+
+- 三个章节页面目前仅提供标题、主题和相邻章节导航，正文待作者审阅后发布。
+- 正文按英文全文在前、中文全文在后的顺序排版，定义符号并标明近似成立的条件。
+- 新增章节时复制相邻章节页面，更新标题、面包屑、前后篇链接和课程目录；资源路径保持 `../../assets/`。
+- 原始手写笔记、扫描图片、原始 PDF 与未批准的正文草稿保存在公开网站目录之外，不提交到公开仓库。
+- 课程笔记仅体现个人学习整理，不假定课程的讲授学校、讲师或教材来源。

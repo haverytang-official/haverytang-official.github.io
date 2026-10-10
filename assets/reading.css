@@ -93,3 +93,24 @@
 .course-hub .course-topics dd{margin:0;color:var(--muted);font-size:.95rem}
 
 .electrodynamics-note .language-version h4[id]{scroll-margin-top:4.5rem}
+
+/* Teaching figures and section shortcuts for the approved electrodynamics note. */
+.electrodynamics-note .teaching-figure{margin:30px 0 34px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);break-inside:avoid}
+.electrodynamics-note .teaching-figure img{display:block;width:100%;height:auto;background:#fff}
+.electrodynamics-note .teaching-figure figcaption{font-size:14px;line-height:1.65;color:var(--muted);margin:16px 0 0}
+.electrodynamics-note .figure-credit{display:block;font-size:12px;margin-top:10px}
+.electrodynamics-note .stokes-figure img{width:min(100%,420px);margin:0 auto}
+.electrodynamics-note .field-panels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.electrodynamics-note .field-panels img{min-width:0}
+.electrodynamics-note .language-links .section-shortcuts{margin-left:auto;display:flex;gap:16px;align-items:center}
+.electrodynamics-note .language-links .section-shortcuts a{font-size:13px}
+.electrodynamics-note .table-hint{display:none}
+@media(max-width:640px){
+  .electrodynamics-note .field-panels{grid-template-columns:1fr;gap:22px}
+  .electrodynamics-note .field-panels img{max-width:320px;margin:0 auto}
+  .electrodynamics-note .teaching-figure{padding:14px 0}
+  .electrodynamics-note .language-links{flex-wrap:wrap;gap:10px 20px}
+  .electrodynamics-note .language-links .section-shortcuts{width:100%;margin-left:0}
+  .electrodynamics-note .language-version,.electrodynamics-note .language-version h3[id],.electrodynamics-note .language-version h4[id]{scroll-margin-top:6.5rem}
+  .electrodynamics-note .table-hint{display:block;font-size:12px;color:var(--muted);margin:-12px 0 20px}
+}

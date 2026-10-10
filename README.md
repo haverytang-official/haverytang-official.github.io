@@ -55,7 +55,7 @@
 
 ## Reading Notes 的维护方式
 
-目录结构为 `Reading Notes → 文献 → 章节笔记`。第一篇文献为 Strait 等（2008），已发布 II.B.2 Magnetic field probes 与 II.C.1 Integrators。第二篇为 Classen（2007）博士论文，已建立文献目录，2.1 The island topology 标为整理中。
+目录结构为 `Reading Notes → 文献 → 章节笔记`。第一篇文献为 Strait 等（2008），已发布 II.B.2 Magnetic field probes 与 II.C.1 Integrators。第二篇为 Classen（2007）博士论文，已发布 2.1 The island topology 双语笔记。
 
 1. **添加新文献**：在 `notes/` 下建立文献文件夹，例如 `notes/author-year/`，复制现有文献的 `index.html`，修改真实书目信息、DOI 和章节列表；在 `notes/index.html` 添加入口。
 2. **添加章节**：在对应文献文件夹中建立章节 HTML，添加面包屑、标题、正文和参考文献，并更新文献的章节索引。该层资源路径为 `../../assets/`，返回总目录为 `../index.html`。
@@ -100,5 +100,5 @@
 ## Classen (2007) 文献目录
 
 - `notes/classen-2007/index.html`：I. G. J. Classen 的博士论文 *Imaging and Control of Magnetic Islands in Tokamaks*（Eindhoven University of Technology, 2007），DOI `10.6100/IR627226`；英文在前，中文在后。
-- 目前只发布文献资料与第 2.1 节的目录占位，没有未批准正文或空章节链接。
-- 第 2.1 节正文经作者审阅后，使用 `notes/classen-2007/island-topology.html`，更新文献目录、Reading Notes 总目录与首页条目。原始照片与审阅稿继续留在公开目录之外。
+- 第 2.1 节正文已于 2026-10-10 经作者审阅后发布，文献目录、Reading Notes 总目录与首页均已接入。
+- `notes/classen-2007/island-topology.html`：第 2.1 节磁岛拓扑双语笔记，英文全文在前、中文全文在后；包含坐标、共振、磁通面、绕行数和宽度，保留已解决的阅读疑问①②。238 处原生 MathML 公式和四张双语 SVG 示意图随正文内嵌，无外部公式或图片依赖。原始照片、原始论文 PDF 与审阅稿保留在公开目录之外。

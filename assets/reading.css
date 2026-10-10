@@ -114,3 +114,21 @@
   .electrodynamics-note .language-version,.electrodynamics-note .language-version h3[id],.electrodynamics-note .language-version h4[id]{scroll-margin-top:6.5rem}
   .electrodynamics-note .table-hint{display:block;font-size:12px;color:var(--muted);margin:-12px 0 20px}
 }
+
+/* Classen section-note layout, figures, and reading-question resolutions. */
+.island-note .contents{border:1px solid var(--line);padding:1.1rem 1.3rem;margin:0 0 2.2rem;font-size:.9rem}
+.island-note .contents summary{cursor:pointer;font-weight:600}
+.island-note .contents-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:1rem}
+.island-note .contents ol{padding-left:1.4rem;margin:0}
+.island-note .contents li{margin:.4rem 0}
+.island-note .language-version h3[id]{scroll-margin-top:4.5rem}
+.island-note .table-scroll td:last-child{white-space:normal}
+.island-note .teaching-figure{margin:30px 0 34px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);break-inside:avoid}
+.island-note .teaching-figure img{display:block;width:100%;max-width:690px;height:auto;margin:0 auto;background:#fff}
+.island-note .teaching-figure figcaption{font-size:14px;line-height:1.65;color:var(--muted);margin-top:16px}
+.island-note .reading-resolution{padding:12px 18px;background:var(--tint);border-left:3px solid var(--accent);margin-bottom:22px}
+.island-note .reading-resolution p{margin:0}
+.island-note .table-hint{display:none}
+@media(max-width:540px){.island-note .contents-grid{grid-template-columns:1fr}}
+@media(max-width:640px){.island-note .table-hint{display:block;font-size:12px;color:var(--muted);margin:-12px 0 20px}}
+@media print{.island-note .contents{display:none}}

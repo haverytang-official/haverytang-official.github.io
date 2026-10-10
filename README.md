@@ -55,7 +55,7 @@
 
 ## Reading Notes 的维护方式
 
-目录结构为 `Reading Notes → 文献 → 章节笔记`。目前第一篇文献为 Strait 等（2008），已发布 II.B.2 Magnetic field probes 与 II.C.1 Integrators 两篇章节笔记。
+目录结构为 `Reading Notes → 文献 → 章节笔记`。第一篇文献为 Strait 等（2008），已发布 II.B.2 Magnetic field probes 与 II.C.1 Integrators。第二篇为 Classen（2007）博士论文，已建立文献目录，2.1 The island topology 标为整理中。
 
 1. **添加新文献**：在 `notes/` 下建立文献文件夹，例如 `notes/author-year/`，复制现有文献的 `index.html`，修改真实书目信息、DOI 和章节列表；在 `notes/index.html` 添加入口。
 2. **添加章节**：在对应文献文件夹中建立章节 HTML，添加面包屑、标题、正文和参考文献，并更新文献的章节索引。该层资源路径为 `../../assets/`，返回总目录为 `../index.html`。
@@ -96,3 +96,9 @@
 - 课程目录的英中 Notes 区域分别提供全文及 1.1、1.2、1.3 的锚点入口；1.3 为 `#en-section-16` / `#zh-section-16`。正文保持作者批准的内容，仅调整标题层级以接入网站布局。未来追加笔记时保留这篇的地址和导读。
 
 - 正文每种语言有四组教学插图，SVG 随正文内嵌，手机上的三个场示例纵向排列。Stokes 方向图按 CC BY-SA 3.0 原样转载，双语图注均保留作者、来源和许可链接；其他示意图为原创。
+
+## Classen (2007) 文献目录
+
+- `notes/classen-2007/index.html`：I. G. J. Classen 的博士论文 *Imaging and Control of Magnetic Islands in Tokamaks*（Eindhoven University of Technology, 2007），DOI `10.6100/IR627226`；英文在前，中文在后。
+- 目前只发布文献资料与第 2.1 节的目录占位，没有未批准正文或空章节链接。
+- 第 2.1 节正文经作者审阅后，使用 `notes/classen-2007/island-topology.html`，更新文献目录、Reading Notes 总目录与首页条目。原始照片与审阅稿继续留在公开目录之外。
